@@ -23,3 +23,10 @@
     pygame.mixer.music.play(start=secs)
 ~~~
 + secs 시간부터 음원 재생 시작
+
+
+~~~
+CREATE TABLE IF NOT EXISTS playlist_info
+(id INTEGER PRIMARY KEY, title TEXT, mood TEXT, mod_ts DATETIME, new_count INTEGER, total_duration INTEGER DEFAULT 0, count INTEGER)')
+~~~
++ DB에 저장된 playlist_info table
